@@ -22,7 +22,7 @@
     "@types/node": "^20.11.20",
     "onchange": "^7.1.0",
     "prisma": "^5.10.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.5"
   },
   "dependencies": {
     "@apollo/client": "^3.9.5",
