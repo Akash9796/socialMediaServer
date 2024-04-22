@@ -9,6 +9,7 @@
     "build": "tsc",
     "watch": "tsc -w",
     "dev": "nodemon build/index.js",
+    "render-build": "npm run build && cp -r src public && concurrently \"npm run watch\" \"npm run dev\"",
     "dev:concurrent": "concurrently \"npm run watch\" \"npm run dev\""
   },
   "keywords": [],
