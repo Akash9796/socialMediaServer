@@ -1,10 +1,14 @@
 import { initServer } from "./app/index.js";
 
+let indexApp: any;
+
 async function init() {
   const app = await initServer();
-  app.listen("4000", () => {
-    console.log(`Server is running on 4000`);
+  app.listen(process.env.PORT, () => {
+    console.log(`Server is running on ${process.env.PORT}`);
   });
+  indexApp = app;
 }
 
 init();
+export default indexApp;
